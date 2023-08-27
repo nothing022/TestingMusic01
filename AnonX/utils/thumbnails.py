@@ -254,7 +254,7 @@ async def gen_qthumb(videoid, user_id):
         background = Image.open(f"cache/temp{videoid}.png")
         background.paste(logo, (width + 2, 108), mask=logo)
         background.paste(x, (1030, 470), mask=x)
-        background.paste(image3, (2, 2), mask=image3)
+        background.paste(image3, (0, 0), mask=image3)
 
         draw = ImageDraw.Draw(background)
         font = ImageFont.truetype("AnonX/assets/font2.ttf", 45)
