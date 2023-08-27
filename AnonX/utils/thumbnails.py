@@ -269,7 +269,7 @@ async def gen_qthumb(videoid, user_id):
                 fill="white",
                 stroke_width=5,
                 stroke_fill="black",
-                font=merlin,
+                font=font,
             )
             if para[0]:
                 text_w, text_h = draw.textsize(f"{para[0]}", font=font)
