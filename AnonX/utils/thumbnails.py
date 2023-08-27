@@ -117,7 +117,7 @@ async def gen_thumb(videoid, user_id):
         background.paste(image3, (2, 2), mask=image3)
 
         draw = ImageDraw.Draw(background)
-        font = ImageFont.truetype("AnonX/assets/font2.ttf", 40)
+        font = ImageFont.truetype("AnonX/assets/font2.ttf", 45)
         ImageFont.truetype("AnonX/assets/font2.ttf", 70)
         arial = ImageFont.truetype("AnonX/assets/font2.ttf", 30)
         ImageFont.truetype("AnonX/assets/font.ttf", 30)
@@ -219,7 +219,7 @@ async def gen_qthumb(videoid, user_id):
         d = np.array(a)
         e = np.dstack((c, d))
         f = Image.fromarray(e)
-        x = f.resize((107, 107))
+        x = f.resize((200, 200))
 
         youtube = Image.open(f"cache/thumb{videoid}.png")
         bg = Image.open(f"AnonX/assets/anonx.png")
