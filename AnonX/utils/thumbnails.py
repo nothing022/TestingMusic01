@@ -113,11 +113,11 @@ async def gen_thumb(videoid, user_id):
         width = int((1280 - 400) / 2)
         background = Image.open(f"cache/temp{videoid}.png")
         background.paste(logo, (width + 2, 100), mask=logo)
-        background.paste(x, (1030, 465), mask=x)
+        background.paste(x, (1030, 466), mask=x)
         background.paste(image3, (2, 2), mask=image3)
 
         draw = ImageDraw.Draw(background)
-        font = ImageFont.truetype("AnonX/assets/font2.ttf", 45)
+        font = ImageFont.truetype("AnonX/assets/font2.ttf", 40)
         ImageFont.truetype("AnonX/assets/font2.ttf", 70)
         arial = ImageFont.truetype("AnonX/assets/font2.ttf", 30)
         ImageFont.truetype("AnonX/assets/font.ttf", 30)
