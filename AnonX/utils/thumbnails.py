@@ -113,7 +113,7 @@ async def gen_thumb(videoid, user_id):
         width = int((1280 - 420) / 12.5)
         background = Image.open(f"cache/temp{videoid}.png")
         background.paste(logo, (width + 2, 100), mask=logo)
-        background.paste(x, (1030, 469), mask=x)
+        background.paste(x, (1030, 470), mask=x)
         background.paste(image3, (2, 2), mask=image3)
 
         draw = ImageDraw.Draw(background)
@@ -249,12 +249,12 @@ async def gen_qthumb(videoid, user_id):
 
         crop_img = Image.open(f"cache/cropped{videoid}.png")
         logo = crop_img.convert("RGBA")
-        logo.thumbnail((400, 400), Image.ANTIALIAS)
-        width = int((1280 - 400) / 1.50)
+        logo.thumbnail((420, 420), Image.ANTIALIAS)
+        width = int((1280 - 420) / 12.5)
         background = Image.open(f"cache/temp{videoid}.png")
         background.paste(logo, (width + 2, 108), mask=logo)
-        background.paste(x, (500, 500), mask=x)
-        background.paste(image3, (0, 0), mask=image3)
+        background.paste(x, (1030, 470), mask=x)
+        background.paste(image3, (2, 2), mask=image3)
 
         draw = ImageDraw.Draw(background)
         font = ImageFont.truetype("AnonX/assets/font2.ttf", 45)
