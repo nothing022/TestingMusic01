@@ -252,8 +252,8 @@ async def gen_qthumb(videoid, user_id):
         logo.thumbnail((400, 400), Image.ANTIALIAS)
         width = int((1280 - 400) / 2)
         background = Image.open(f"cache/temp{videoid}.png")
-        background.paste(logo, (width + 2, 138), mask=logo)
-        background.paste(x, (600, 427), mask=x)
+        background.paste(logo, (width + 2, 108), mask=logo)
+        background.paste(x, (600, 450), mask=x)
         background.paste(image3, (0, 0), mask=image3)
 
         draw = ImageDraw.Draw(background)
