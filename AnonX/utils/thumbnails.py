@@ -96,9 +96,9 @@ async def gen_thumb(videoid, user_id):
         Xcenter = youtube.width / 2
         Ycenter = youtube.height / 2
         x1 = Xcenter - 250
-        y1 = Ycenter - 250
+        y1 = Ycenter - 240
         x2 = Xcenter + 250
-        y2 = Ycenter + 250
+        y2 = Ycenter + 240
         logo = youtube.crop((x1, y1, x2, y2))
         logo.thumbnail((520, 520), Image.ANTIALIAS)
         logo.save(f"cache/chop{videoid}.png")
@@ -134,7 +134,7 @@ async def gen_thumb(videoid, user_id):
             if para[0]:
                 text_w, text_h = draw.textsize(f"{para[0]}", font=font)
                 draw.text(
-                    ((1280 - text_w) / 2, 500),
+                    ((1280 - text_w) / 2, 530),
                     f"{para[0]}",
                     fill="white",
                     stroke_width=1,
