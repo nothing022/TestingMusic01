@@ -61,6 +61,11 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
+                text="ᴏᴡɴᴇʀ", url=f"https://t.me/infinityuncounted01"
+            )
+        ],
+        [
+            InlineKeyboardButton(
                 text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
             )
         ],
@@ -118,6 +123,11 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
+                text="ᴏᴡɴᴇʀ", url=f"https://t.me/infinityuncounted01"
+            )
+        ],
+        [
+            InlineKeyboardButton(
                 text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
             )
         ],
@@ -147,6 +157,11 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
+                text="ᴏᴡɴᴇʀ", url=f"https://t.me/infinityuncounted01"
+            )
+        ],
+        [
+            InlineKeyboardButton(
                 text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
             )
         ],
@@ -170,6 +185,11 @@ def telegram_markup(_, chat_id):
             InlineKeyboardButton(
                 text="▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="ᴏᴡɴᴇʀ", url=f"https://t.me/infinityuncounted01"
+            )
         ],
         [
             InlineKeyboardButton(
@@ -298,6 +318,9 @@ close_keyboard = InlineKeyboardMarkup(
                 [
                     InlineKeyboardButton(
                         text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
+                    ),
+                    InlineKeyboardButton(
+                text="ᴏᴡɴᴇʀ", url=f"https://t.me/infinityuncounted01"
                     )
                 ]    
             ]
@@ -325,6 +348,11 @@ def queue_markup(_, videoid, chat_id):
             InlineKeyboardButton(
                 text="▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="ᴏᴡɴᴇʀ", url=f"https://t.me/infinityuncounted01"
+            )
         ],
         [
             InlineKeyboardButton(
